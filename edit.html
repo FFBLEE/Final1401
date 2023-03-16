@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL1401</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/api_edit.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <h1>REST API EDIT</h1>
+        <form action="">
+            <div class="mb-3 mt-3">
+                <label for="id" class="form-label">id:</label>
+                <input type="text" class="form-control" id="id" placeholder="Enter name" name="id">
+              </div>
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">description:</label>
+              <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
+            </div>
+            <div class="mb-3">
+                <label for="category_id" class="form-label">category id:</label>
+                <input type="text" class="form-control" id="category_id" placeholder="Enter category id" name="category_id">
+              </div>
+              <div class="mb-3">
+                <label for="category_name" class="form-label">category name:</label>
+                <input type="text" class="form-control" id="category_name" placeholder="Enter category name" name="category_name">
+              </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">price:</label>
+                <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
+              </div>
+              <button  class="btn btn-warning"  onclick="window.history.go(-1); return false;">Cancel</button>
+              <button type='button'  class="btn btn-primary"  onclick="edit()">Submit</button>
+          </form>
+    </div>
+</body>
+</html>
