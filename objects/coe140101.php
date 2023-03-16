@@ -178,7 +178,7 @@ class coe140101{
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    name=:name, price=:price, description=:description, category_id=:category_id, created=:created";
+                     name=:name, phone=:phone, email=:email, country=:country, currency=:currency";
     
         // prepare query
         $stmt = $this->conn->prepare($query);
