@@ -15,7 +15,7 @@ $database = new Database();
 $db = $database->getConnection();
   
 // prepare product object
-$product = new coe140101($db);
+$coe140101 = new coe140101($db);
   
 // get id of product to be edited
 $data = json_decode(file_get_contents("php://input"));
